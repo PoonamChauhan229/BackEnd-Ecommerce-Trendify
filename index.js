@@ -30,7 +30,7 @@ app.use("/api/wishlist", wishlistRoutes);
 app.use("/api/order", orderRoutes);
 
 //server Start:
-const PORT = 8000;
+const PORT = 8000 ||process.env.PORT;
 app.listen(PORT, () => {
   console.log("Server Started at PORT", PORT);
 });
